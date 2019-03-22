@@ -1,0 +1,43 @@
+@media(max-width: 992px){
+
+}
+@media(max-width: 768px){
+
+}
+@media(max-width:576px){
+
+}
+*{
+    font-family: Roboto;
+}
+body{
+    background-image: url(../images/background.jpg)
+
+}
+.jumbotron, .navbar{
+    background: rgba(0, 0, 0, 0.322);
+    text-align: center;
+    padding-left: 0;
+}
+#jumbo{
+ z-index: 0;
+}
+.display-4, .lead{
+    color: bisque;
+}
+.navbar-brand, .nav-link, .nav-item{
+    color: bisque;
+    font-size: 25px;
+
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+}
+.photo{
+    height: 90px;
+    width: 90px;
+}
+.row{
+    width: 100%;
+}
