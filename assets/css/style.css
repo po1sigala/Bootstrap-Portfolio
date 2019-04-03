@@ -11,21 +11,29 @@
     font-family: Roboto;
 }
 body{
-    background-image: url(../images/background.jpg)
-
+    background: rgb(6, 6, 20);
 }
-.jumbotron, .navbar{
-    background: rgba(0, 0, 0, 0.322);
+.wrapper{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h2{
+    line-height: 70px;
+}
+.jumbotron, .navbar,.bio{
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding-left: 0;
+    line-height: 50px;
 }
 #jumbo{
  z-index: 0;
 }
-.display-4, .lead{
+body{
     color: bisque;
 }
-.navbar-brand, .nav-link, .nav-item{
+.navbar-brand, .nav-link, .nav-item, .bio{
     color: bisque;
     font-size: 25px;
 
@@ -40,4 +48,10 @@ body{
 }
 .row{
     width: 100%;
+}
+.card{
+    color: black;
+}
+.blank{
+    background: none;
 }
