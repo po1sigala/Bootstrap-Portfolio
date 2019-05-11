@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Alex the Dev</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 <body>
 
 <!--NavBar-->
@@ -42,30 +45,82 @@
   <!--Jumbotron-->
   <div class="jumbotron jumbotron-billboard">
           <div class="container">
-          <div id="row">
-            <h1 class="display-4">Get to know your next engineer</h1>
-            <p class="lead">Read about my story and feel free to check out some of the projects I have created below!</p>
-          </div>
+            <div id="row">
+              <h1 class="display-4">Get to know your next engineer</h1>
+              <p class="lead">Read about my story and feel free to check out some of the projects I have created below!</p>
+            </div>
           </div>
         </div>
+<div class="contentContainer">
   <!--Biography-->
-  
+  <div class="row center">
+  <h1 class="col-md-12"> <span class="badge badge-pill backdrop"> Hi! I'm Alex </span></h1>
+  </div>
   <div class="media">
-    <img src="assets/images/favicon.JPG" class="mr-3" alt="...">
-    <div class="media-body bio">
-      <h1 class="mt-0">Hi! I'm Alex</h1>
-      Thanks for dropping by and taking a look into my journey as a web developer. I graduated with a Bachelor's of Science in Molecular Biology and have enjoyed a career that has 
-      given me a wide range of experiences working in biotech, EV's, Surgical Robots, Government, and now software!. I'm someone who loves to learn and loves to create new products which can positively impact th eword around me. 
-     This is why I taught myself to code. I want to use my skills in software to continue developing amazing software products which can have global impacts. I have a high drive and a lot of ambition I hope to bring to your team. 
-      </div>
+    <img src="assets/images/favicon.JPG" id="bioimage"class="mr-3" alt="...">
+    <div class="media-body">
+      
+       <div class="accordion" id="accordionExample">
+          <div class="card bio">
+            <div class="card-header leftText" id="headingOne">
+              
+                <button class="btn btn-link leftText" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h3> Thanks for dropping by. You've found a driven and passionate engineer with a diverese background in Software, Biology, and Manufacturing. 
+                      <br> <br> <br>
+                       click to read more about my story or continue scrolling to some of my projects ...
+                      </h3>
+                </button>
+              
+            </div>
+        
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                  <p> I graduated with a Bachelor's of Science in Molecular Biology and have enjoyed a career that has given me a wide range of experiences including biotech, EV's, Surgical Robots, Agricultural Law Enforcement, andSoftware! I'm someone who loves to learn and loves to create new products which can positively impact the word around me. This is why I taught myself to code. I want to use my skills in software to continue developing amazing software products which can have global impacts. I have a high drive, a lot of ambition, and a passionate personality that I think positively impacts any team I am a part of.
+                  </p>
+                </div>
+            </div>
+          </div>
+          </div>
+    
+    </div>
+  
   </div>
  
   <br><br>
   <!--cards with projects-->
   <div class="container-fluid padding">
-  <div class="row">
+    <div class="row center">
+
+        <h1 class="col-md-12"> <span class="badge badge-pill backdrop">Featured Projects</span></h1>
+    </div>
+      <div class="row mediaRow">
+      
+      <div class="col-md-12">
+          <div class="card noBack" style="width: 18rem;">
+                  <img src="assets/images/newsly.png" class="card-img-top" alt="...">
+                  <div class="card-body center">
+                  <h4 class="card-title"><span class="badge badge-primary badge-pill backdrop"><h3>Newsly</h3> </span> <br> Broaden Your Perspectives</h4>
+                  <p class="card-text">A collaborative web application where I acted as project manager.Our siote seeks to expand people's viewpionts by allowing them to search a topic across multiple media platfroms i.e. news sites, social media, and entertainment sources.</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <a href="https://po1sigala.github.io/Newsly/" class="btn btn-primary" target="_blank">The Site</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="https://github.com/po1sigala/Newsly" class="btn btn-primary" target="_blank">The code</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+    <br><br><br><br>
+    <div class="row center">
+      <h1 class="col-md-12"><span class="badge badge-pill backdrop">Other Projects</span></h1>
+    </div>
+  <div class="row mediaRow">
+    
   <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card noBack" style="width: 18rem;">
               <img src="assets/images/bootstrap.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
               <h5 class="card-title">Company Website</h5>
@@ -75,7 +130,7 @@
           </div>
       </div>
       <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card noBack" style="width: 18rem;">
       <img src="assets/images/psychic.jpg" class="card-img-top" alt="...">
       <div class="card-body">
           <h5 class="card-title">JavaScript Game</h5>
@@ -84,7 +139,7 @@
       </div></div></div>
       
       <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card noBack" style="width: 18rem;">
               <img src="assets/images/goku.jpg" class="card-img-top" alt="...">
               <div class="card-body">
               <h5 class="card-title">Charged up!</h5>
@@ -95,10 +150,11 @@
       </div>
   </div>
   </div>
+</div>
   <!--footer-->
-  <div class="container">
+  <div class="container-fluid">
       <div class="row">
-  <div class="card">
+        <div class="card container-fluid">
           <div class="card-footer">
             Featured
           </div>
@@ -112,4 +168,5 @@
   </div>
 </div>
 </body>
+
 </html>

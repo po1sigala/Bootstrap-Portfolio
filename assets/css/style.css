@@ -2,35 +2,47 @@
 
 }
 @media(max-width: 768px){
-
+ #bioimage{
+     width: 500px;
+ }
 }
-@media(max-width:576px){
 
+.contentContainer{
+    margin: 15%;
 }
+
 *{
     font-family: Roboto;
+    color: bisque;
+}
+.mediaRow{
+    background: rgba(19, 18, 18, 0.527);
 }
 body{
     background: rgb(6, 6, 20);
+    background-image: url("../images/background.jpg");
+min-height: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
 }
-.wrapper{
+/* .wrapper{
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-}
+} */
 h2{
     line-height: 70px;
 }
-.jumbotron, .navbar,.bio{
+.backdrop{
     background: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    padding-left: 0;
-    line-height: 50px;
 }
+
 #jumbo{
  z-index: 0;
 }
-body{
+body, h3, p{
     color: bisque;
 }
 .navbar-brand, .nav-link, .nav-item, .bio{
@@ -51,7 +63,29 @@ body{
 }
 .card{
     color: black;
+    background: #133b66;
 }
 .blank{
     background: none;
 }
+
+
+ #bioimage{
+        width: 300px;
+    }
+.center{
+    text-align: center;
+}
+.leftText{
+    text-align: left;
+}
+.jumbotron, .navbar,.bio{
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-left: 0;
+    line-height: 50px;
+}
+
+/* .noBack{
+    background: none;
+} */
