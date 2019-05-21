@@ -63,12 +63,15 @@ body, h3, p{
 }
 .card{
     color: black;
-    background: #133b66;
+    background: none;
+    padding: 1em;
 }
 .blank{
     background: none;
 }
-
+.blue{
+    background:#133b66;
+}
 
  #bioimage{
         width: 300px;
